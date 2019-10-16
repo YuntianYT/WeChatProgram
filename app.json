@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/wxDrawer/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ee4639",
+    "navigationBarTitleText": "主页",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

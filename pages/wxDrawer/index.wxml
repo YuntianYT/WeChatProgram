@@ -1,0 +1,18 @@
+<view class="mpage {{!ui.tStart? 'withAnimate': ''}}" style="left:{{ui.offsetLeft}}px;width: {{ui.windowWidth}}px" bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" bindtap="handlerPageTap">
+  <scroll-view bindscroll="handlerScroll" scroll-y style="height: 100%;">
+    <image src="../../imgs/risk.png"></image>
+  </scroll-view>
+</view>
+<view bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" class="user" style="width: {{ui.menuWidth}}px">
+   <view style="width: {{ui.menuWidth}}px;left:{{-ui.menuWidth/3 + ui.offsetLeft/3}}px" class="user-box {{!ui.tStart? 'withAnimate': ''}}">
+     <view class="user-face-wrapper">
+       <view class="user-account">账号：shatoujiedao01</view>
+       <view class="user-company">所属公司：沙头街道</view>
+     </view>
+     <view class="one-menu">用户信息</view>
+     <view class="one-menu">所属公司</view>
+     <view class="one-menu">版本信息</view>
+     <view class="one-menu">关于我们</view>
+     <view class="one-menu">修改密码</view>
+   </view>
+</view>
