@@ -1,6 +1,6 @@
 <view class="mpage {{!ui.tStart? 'withAnimate': ''}}" style="left:{{ui.offsetLeft}}px;width: {{ui.windowWidth}}px" bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" bindtap="handlerPageTap">
   <scroll-view bindscroll="handlerScroll" scroll-y style="height: 100%;">
-    <image src="../../imgs/risk.png"></image>
+    <image class="background-img" src="../../imgs/risk.png"></image>
   </scroll-view>
 </view>
 <view bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" class="user" style="width: {{ui.menuWidth}}px">

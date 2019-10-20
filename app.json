@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index2/index2",
     "pages/wxDrawer/index"
   ],
   "window": {

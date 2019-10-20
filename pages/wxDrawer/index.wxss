@@ -33,7 +33,9 @@
   width: 50rpx;
 	height: 50rpx;
 }
-
+.background-img {
+  width: 100%
+}
 .item {
   display: flex;
   align-items: center;
