@@ -1,7 +1,49 @@
 <view class="mpage {{!ui.tStart? 'withAnimate': ''}}" style="left:{{ui.offsetLeft}}px;width: {{ui.windowWidth}}px" bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" bindtap="handlerPageTap">
-  <scroll-view bindscroll="handlerScroll" scroll-y style="height: 100%;">
+  <view class="main-bg">
     <image class="background-img" src="../../imgs/risk.png"></image>
-  </scroll-view>
+    <view class="stable-bg">
+      <view class="col-info">
+        <text style="font-size: 25rpx">今日采集</text>
+        <text>\n个人：0项</text>
+        <text>\n企业：0项</text>
+      </view>
+      <view class="col-info">
+        <text style="font-size: 25rpx">本周采集</text>
+        <text>\n个人：0项</text>
+        <text>\n企业：0项</text>
+      </view>
+      <view class="col-info">
+        <text style="font-size: 25rpx">本月采集</text>
+        <text>\n个人：0项</text>
+        <text>\n企业：0项</text>
+      </view>
+    </view>
+    <view class="riskManage">
+      <view class="riskItem" bindtap="goElement">
+        <image mode="center" src="../../imgs/shop_management.png" />
+        <text decode="{{true}}">\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;单元查询</text>
+      </view>
+      <view class="riskItem" bindtap="goCollectRemark">
+        <image mode="center" src="../../imgs/add_salse.png" />    
+        <text decode="{{true}}">\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个人采集</text>
+      </view>
+      <view class="riskItem" bindtap="goCompanyRisk">
+        <image mode="center" src="../../imgs/guandan_more.png" />        
+        <text decode="{{true}}">\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;企业风险</text>
+      </view>
+    </view>
+    <view class="riskManage">
+      <view class="riskItem" bindtap="goRiskRemark">
+        <image mode="center" src="../../imgs/sales_management.png" />
+        <text decode="{{true}}">\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已上报风险</text>
+      </view>
+     <view class="riskItem" bindtap="goRiskStatistics">
+        <image mode="center" src="../../imgs/analysis.png" />        
+        <text decode="{{true}}">\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分级统计</text>
+      </view>
+      <view class="riskItem"></view>
+    </view>
+  </view>
 </view>
 <view bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" class="user" style="width: {{ui.menuWidth}}px">
    <view style="width: {{ui.menuWidth}}px;left:{{-ui.menuWidth/3 + ui.offsetLeft/3}}px" class="user-box {{!ui.tStart? 'withAnimate': ''}}">
@@ -9,10 +51,24 @@
        <view class="user-account">账号：shatoujiedao01</view>
        <view class="user-company">所属公司：沙头街道</view>
      </view>
-     <view class="one-menu">用户信息</view>
-     <view class="one-menu">所属公司</view>
-     <view class="one-menu">版本信息</view>
-     <view class="one-menu">关于我们</view>
-     <view class="one-menu">修改密码</view>
+     <view class="one-menu" bindtap="goUserInfo">
+       <image class="icon" src="../../imgs/userInfo.png"></image>用户信息
+     </view>
+     <view class="one-menu" bindtap="goCompany">
+       <image class="icon" src="../../imgs/company.png"></image>所属公司
+     </view>
+     <view class="one-menu" bindtap="goAppVersion">
+       <image class="icon" src="../../imgs/appVersion.png"></image>版本信息
+     </view>
+     <view class="one-menu" bindtap="goAboutUs">
+       <image class="icon" src="../../imgs/aboutUs.png"></image>关于我们
+     </view>
+     <view class="one-menu" bindtap="goChangePassword">
+       <image class="icon" src="../../imgs/changePassword.png"></image>修改密码
+     </view>
+     <view class="logout">
+       <image class="icon" src="../../imgs/logout.png"></image>
+       <text>退出系统</text>
+     </view>
    </view>
 </view>

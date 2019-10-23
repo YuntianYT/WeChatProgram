@@ -13,6 +13,61 @@ Page({
       tStart: true      
     }
   },
+  // 跳转函数
+  goChangePassword(){
+    wx.navigateTo({
+      url: '../changePassword/changePassword',
+    })
+  },
+  goAboutUs() {
+    wx.navigateTo({
+      url: '../aboutUs/aboutUs',
+    })
+  },
+  goAppVersion() {
+    wx.navigateTo({
+      url: '../appVersion/appVersion',
+    })
+  },
+  goCompany() {
+    wx.navigateTo({
+      url: '../company/company',
+    })
+  },
+  goUserInfo() {
+    wx.navigateTo({
+      url: '../userInfo/userInfo',
+    })
+  },
+  // riskManage
+  goElement() {
+    wx.navigateTo({
+      url: '../riskManage/element/element',
+    })
+  },
+  goCollectRemark() {
+    wx.navigateTo({
+      url: '../riskManage/collectRemark/collectRemark',
+    })
+  },
+  goCompanyRisk() {
+    wx.navigateTo({
+      url: '../riskManage/companyRisk/companyRisk',
+    })
+  },
+  goRiskRemark() {
+    wx.navigateTo({
+      url: '../riskManage/riskRemark/riskRemark',
+    })
+  },
+  goRiskStatistics() {
+    wx.navigateTo({
+      url: '../riskManage/riskStatistics/riskStatistics',
+    })
+  },
+  // 跳转函数
+
+
   onLoad() {
     try {
       let res = wx.getSystemInfoSync()

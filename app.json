@@ -1,7 +1,16 @@
 {
   "pages": [
-    "pages/index2/index2",
-    "pages/wxDrawer/index"
+    "pages/wxDrawer/index",
+    "pages/changePassword/changePassword",
+    "pages/aboutUs/aboutUs",
+    "pages/appVersion/appVersion",
+    "pages/company/company",
+    "pages/userInfo/userInfo",
+    "pages/riskManage/element/element",
+    "pages/riskManage/collectRemark/collectRemark",
+    "pages/riskManage/companyRisk/companyRisk",
+    "pages/riskManage/riskRemark/riskRemark",
+    "pages/riskManage/riskStatistics/riskStatistics"
   ],
   "window": {
     "backgroundTextStyle": "light",
