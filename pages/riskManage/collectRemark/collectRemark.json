@@ -1,4 +1,9 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "tabs": "/component/Tabs/tabs",
+    "tab": "/component/Tabs/tab/tab"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
   "navigationBarTitleText": "个人采集"
 }

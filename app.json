@@ -18,5 +18,8 @@
     "navigationBarTitleText": "主页",
     "navigationBarTextStyle": "white"
   },
+  "usingComponents": {
+    "br": "/component/br/br"
+  },
   "sitemapLocation": "sitemap.json"
 }

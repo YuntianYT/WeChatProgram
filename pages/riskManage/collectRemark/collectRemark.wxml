@@ -1,2 +1,16 @@
-<!--pages/riskManage/collectRemark/collectRemark.wxml-->
-<text>pages/riskManage/collectRemark/collectRemark.wxml</text>
+<view>
+  <tabs>
+    <tab title='全部'>
+        <view>111</view>
+    </tab>
+    <tab title='今天' active>
+        <view>222</view>
+    </tab>
+    <tab title='本月'>
+        <view> 333</view>
+    </tab>
+    <tab title='其他'>
+        <view> 4</view>
+    </tab>
+  </tabs>
+</view>
