@@ -1,2 +1,23 @@
-<!--pages/aboutUs/aboutUs.wxml-->
-<text>pages/aboutUs/aboutUs.wxml</text>
+<view class="main">
+  <view class="container">
+    <view class="header">
+      <image class="icon" src="../../imgs/logout-icon.png"></image>
+      <view class="tip">
+        <text>城市安全风险管控app</text>
+        <text class="date">2019-12-33</text>
+      </view>
+    </view>
+    <view class="info">
+        <br />
+        <text>单元查询模块：企业单元树展示，单元详情。</text>
+        <br />
+        <text>个人采集模块：登录用户在今天，本月以及自定义时间段内的风险采集详情，可以点击右上角</text>
+        <br />
+        <text>企业风险模块：选中的企业在今天，本月以及自定义时间段内的风险采集详情，点击右上角</text>
+        <br />
+        <text>已上报风险模块：该企业已经被上报的的风险详情，点击右上角"查询"按钮对风险进行条件查询</text>
+        <br />
+        <text>分级统计模块：柱状图，饼状图，折线图对已上报风险进行图标展示</text>
+    </view>
+  </view>
+</view>

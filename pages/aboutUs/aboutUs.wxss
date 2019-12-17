@@ -1,1 +1,32 @@
-/* pages/aboutUs/aboutUs.wxss */
+.main {
+  padding: 40rpx;
+}
+.container {
+  border: solid #eee;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid #eee;
+}
+.icon {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+.tip {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+}
+.date {
+  font-size: 25rpx;
+  color: rgb(136, 132, 132);
+}
+.info {
+  padding: 30rpx;
+  font-size: 25rpx;
+  color: rgb(73, 70, 70);
+}

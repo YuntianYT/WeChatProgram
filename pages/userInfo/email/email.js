@@ -1,4 +1,4 @@
-// pages/userInfo/userInfo.js
+// pages/userInfo/email/email.js
 Page({
 
   /**
@@ -7,21 +7,7 @@ Page({
   data: {
 
   },
-  goPhone() {
-    wx.navigateTo({
-      url: './phone/phone',
-    })
-  },
-  goEmail() {
-    wx.navigateTo({
-      url: './email/email',
-    })
-  },
-  goUsername() {
-    wx.navigateTo({
-      url: './username/username',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

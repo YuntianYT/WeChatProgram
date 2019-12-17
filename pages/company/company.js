@@ -7,7 +7,26 @@ Page({
   data: {
 
   },
-
+  goBaseInfo() {
+    wx.navigateTo({
+      url: './baseInfo/baseInfo',
+    })
+  },
+  goDateInfo() {
+    wx.navigateTo({
+      url: './dateInfo/dateInfo',
+    })
+  },
+  goFeatureInfo() {
+    wx.navigateTo({
+      url: './featureInfo/featureInfo',
+    })
+  },
+  goRegisterInfo() {
+    wx.navigateTo({
+      url: './registerInfo/registerInfo',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

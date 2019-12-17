@@ -1,0 +1,23 @@
+<view>
+  <image mode="aspectFit" src="../../imgs/login_banner.png"></image>
+  <view class="login">
+    <view class="login-form">
+      <view class="input">
+        <text>账号：</text><input bindinput="usernameInput"></input>
+      </view>
+      <view class="input">
+        <text>密码：</text><input password="true" bindinput="passwordInput"></input>
+      </view>
+      <view class="input">
+        <text>用户角色：</text>
+        <view class="section">
+          <radio-group name="radio-group">
+            <label><radio checked value="radio1"/>企业自评员</label>
+            <label><radio value="radio2"/>第三方评估员</label>
+          </radio-group>
+        </view>
+      </view>
+    </view>
+    <button plain="true" bindtap="loginBtnClick">登陆</button>
+  </view>
+</view>

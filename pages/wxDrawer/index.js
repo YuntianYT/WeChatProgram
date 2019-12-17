@@ -65,6 +65,11 @@ Page({
       url: '../riskManage/riskStatistics/riskStatistics',
     })
   },
+  goLogout() {
+    wx.navigateTo({
+      url: '../logout/logout',
+    })
+  },
   // 跳转函数
 
 

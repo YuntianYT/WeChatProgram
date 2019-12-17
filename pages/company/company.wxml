@@ -1,2 +1,20 @@
-<!--pages/company/company.wxml-->
-<text>pages/company/company.wxml</text>
+<view class="main">
+  <view class="container">
+    <view class="item" bindtap="goBaseInfo">
+        <text>基本信息</text>
+        <image src="../../imgs/arrow.png"></image>
+    </view>
+    <view class="item" bindtap="goFeatureInfo">
+        <text>特征信息</text>
+        <image src="../../imgs/arrow.png"></image>
+    </view>
+    <view class="item" bindtap="goDateInfo">
+        <text>日期信息</text>
+        <image src="../../imgs/arrow.png"></image>
+    </view>
+    <view class="item" bindtap="goRegisterInfo">
+        <text>注册信息</text>
+        <image src="../../imgs/arrow.png"></image>
+    </view>
+  </view>
+</view>

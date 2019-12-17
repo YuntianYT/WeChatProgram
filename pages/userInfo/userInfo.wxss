@@ -1,1 +1,20 @@
-/* pages/userInfo/userInfo.wxss */
+.main {
+  padding: 40rpx;
+}
+.container {
+  border: solid #eee;
+}
+.item {
+  padding: 30rpx;
+  border-bottom: solid #eee;
+}
+.var {
+  float: right;
+  color: rgb(172, 167, 167);
+}
+image {
+  width: 40rpx;
+  height: 40rpx;
+  float: right;
+  margin-left: 20px;
+}

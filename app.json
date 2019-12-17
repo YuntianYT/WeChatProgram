@@ -1,16 +1,24 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/wxDrawer/index",
-    "pages/changePassword/changePassword",
-    "pages/aboutUs/aboutUs",
-    "pages/appVersion/appVersion",
     "pages/company/company",
+    "pages/aboutUs/aboutUs",
+    "pages/logout/logout",
+    "pages/changePassword/changePassword",
     "pages/userInfo/userInfo",
     "pages/riskManage/element/element",
     "pages/riskManage/collectRemark/collectRemark",
     "pages/riskManage/companyRisk/companyRisk",
     "pages/riskManage/riskRemark/riskRemark",
-    "pages/riskManage/riskStatistics/riskStatistics"
+    "pages/riskManage/riskStatistics/riskStatistics",
+    "pages/userInfo/username/username",
+    "pages/userInfo/phone/phone",
+    "pages/userInfo/email/email",
+    "pages/company/baseInfo/baseInfo",
+    "pages/company/featureInfo/featureInfo",
+    "pages/company/dateInfo/dateInfo",
+    "pages/company/registerInfo/registerInfo"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,4 +1,4 @@
-// pages/appVersion/appVersion.js
+// pages/userInfo/username/username.js
 Page({
 
   /**

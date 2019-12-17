@@ -5,9 +5,9 @@
   border: solid #eee;
 }
 input {
-  height: 70rpx;
+  height: 80rpx;
   margin-left: 20px;
 }
-.item {
-  margin-top: 20px;
+button {
+  margin-top: 50rpx;
 }

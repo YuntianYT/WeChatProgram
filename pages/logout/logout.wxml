@@ -1,0 +1,16 @@
+<!--pages/logout/logout.wxml-->
+<view class="main">
+  <view class="container">
+    <view class="header">
+      <image class="icon" src="../../imgs/logout-icon.png"></image>
+      <view class="tip">
+        <text>退出登陆</text>
+        <text>您确定要退出登陆吗？</text>
+      </view>
+    </view>
+    <image class="image" mode="aspectFit" src="../../imgs/logout.jpg"></image>
+    <view class="footer">
+      <button plain="true">确认退出系统</button>
+    </view>
+  </view>
+</view>

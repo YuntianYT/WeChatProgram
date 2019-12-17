@@ -57,16 +57,13 @@
      <view class="one-menu" bindtap="goCompany">
        <image class="icon" src="../../imgs/company.png"></image>所属公司
      </view>
-     <view class="one-menu" bindtap="goAppVersion">
-       <image class="icon" src="../../imgs/appVersion.png"></image>版本信息
-     </view>
      <view class="one-menu" bindtap="goAboutUs">
        <image class="icon" src="../../imgs/aboutUs.png"></image>关于我们
      </view>
      <view class="one-menu" bindtap="goChangePassword">
        <image class="icon" src="../../imgs/changePassword.png"></image>修改密码
      </view>
-     <view class="logout">
+     <view class="logout" bindtap="goLogout">
        <image class="icon" src="../../imgs/logout.png"></image>
        <text>退出系统</text>
      </view>

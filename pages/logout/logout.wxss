@@ -1,0 +1,32 @@
+/* pages/logout/logout.wxss */
+.main {
+  padding: 20px;
+}
+.main .container {
+  border: solid #eee
+}
+.main .container .image{
+  width: 95%;
+  height: 650rpx;
+  margin-left: 20rpx;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid #eee;
+}
+.tip {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+}
+.icon {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+.footer {
+  border-top: solid #eee;
+}

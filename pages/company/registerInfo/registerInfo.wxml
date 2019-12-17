@@ -1,0 +1,16 @@
+<view class="main">
+  <view class="container">
+    <view class="item">
+        <text>注册类型：</text>
+    </view>
+    <view class="item">
+        <text>注册号：</text>
+    </view>
+    <view class="item">
+        <text>注册资本：</text>
+    </view>
+    <view class="item">
+        <text>经营范围：</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<view class="main">
+  <view class="input">
+    <input></input>
+  </view>
+  <button type="warn" disabled>提交</button>
+</view>

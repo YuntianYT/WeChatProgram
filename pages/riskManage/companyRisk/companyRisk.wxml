@@ -1,9 +1,9 @@
 <view>
   <tabs>
-    <tab title='全部'>
+    <tab title='全部' active>
         <view>111</view>
     </tab>
-    <tab title='今天' active>
+    <tab title='今天'>
         <view>222</view>
     </tab>
     <tab title='本月'>

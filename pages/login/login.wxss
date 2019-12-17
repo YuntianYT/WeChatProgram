@@ -1,0 +1,23 @@
+/* pages/login/login.wxss */
+image {
+  width: 100%;
+}
+.login {
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+.login-form {
+  border: 2px solid #eee;
+}
+.input {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid #eee;
+  padding: 20px;
+}
+.usertype {
+  padding: 20px;
+}
+button {
+  margin-top: 50rpx;
+}
