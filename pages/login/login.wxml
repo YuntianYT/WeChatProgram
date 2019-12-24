@@ -1,4 +1,5 @@
 <view>
+  <toast id="toast" />
   <image mode="aspectFit" src="../../imgs/login_banner.png"></image>
   <view class="login">
     <view class="login-form">

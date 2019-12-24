@@ -1,19 +1,19 @@
 <view class="main">
   <view class="container">
     <view class="item">
-        <text>经济类型：</text>
+        <text>经济类型：{{encotype_infoid}}</text>
     </view>
     <view class="item">
-        <text>行政区域：</text>
+        <text>行政区域：{{jaf_regionid}}</text>
     </view>
     <view class="item">
-        <text>行业主管：</text>
+        <text>行业主管：{{entp_kindinfoid}}</text>
     </view>
     <view class="item">
-        <text>监管分类：</text>
+        <text>监管分类：{{jaf_select_code}}</text>
     </view>
     <view class="item">
-        <text>主管部门：</text>
+        <text>主管部门：{{manage_dpt}}</text>
     </view>
   </view>
 </view>

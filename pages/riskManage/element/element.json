@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "mytree": "../../../component/mytree/mytree"
+  },
   "navigationBarTitleText": "单元查询"
 }

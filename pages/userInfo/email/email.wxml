@@ -1,6 +1,6 @@
 <view class="main">
   <view class="input">
-    <input></input>
+    <input bindinput="emailInput"></input>
   </view>
-  <button type="warn" disabled>提交</button>
+  <button type="warn" disabled="{{!email.length>0}}" bindtap="updateEmail">提交</button>
 </view>

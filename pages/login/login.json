@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "登陆"
+  "usingComponents": {
+    "toast": "../../component/toast/toast"
+  },
+  "navigationBarTitleText": "登陆",
+  "navigationStyle": "custom"
 }

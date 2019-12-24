@@ -1,13 +1,38 @@
-// pages/userInfo/username/username.js
+// pages/userInfo/email/email.js
+var config = require('../../../utils/config.js')
+
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    flag: true,
+    username: null
   },
-
+  usernameInput: function (event) {
+    this.setData({
+      username: event.detail.value
+    })
+  },
+  updateUsername() {
+    wx.request({
+      url: config.host + 'appUser/updateUserInfo',
+      data: {
+        id: app.globalData.userInfo.id,
+        key: 'username',
+        value: this.data.username
+      },
+      success(res) {
+        if (res.data !== 0) {
+          wx.navigateBack({
+            delta: 1
+          })
+        }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

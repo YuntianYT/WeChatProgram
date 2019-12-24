@@ -3,32 +3,33 @@
         <view class="item" bindtap="goUsername">
             <text>昵称</text>
             <image src="../../imgs/arrow.png"></image>
-            <text class="var">王工</text>
+            <text class="var">{{userInfo.username}}</text>
         </view>
         <view class="item">
             <text>人员编号</text>
             <image src="../../imgs/lock.png"></image>
-            <text class="var">王工</text>
+            <text class="var">{{userInfo.user_code}}</text>
         </view>
         <view class="item">
             <text>性别</text>
             <image src="../../imgs/lock.png"></image>
-            <text class="var">王工</text>
+            <text class="var" wx:if='{{userInfo.sex==1}}'>女</text>
+            <text class="var" wx:if='{{userInfo.sex==2}}'>男</text>
         </view>
         <view class="item">
             <text>所属公司</text>
             <image src="../../imgs/lock.png"></image>
-            <text class="var">王工</text>
+            <text class="var">{{userInfo.cname}}</text>
         </view>
         <view class="item" bindtap="goPhone">
             <text>手机号码</text>
             <image src="../../imgs/arrow.png"></image>
-            <text class="var">王工</text>
+            <text class="var">{{userInfo.phone}}</text>
         </view>
         <view class="item" bindtap="goEmail">
             <text>电子邮箱</text>
             <image src="../../imgs/arrow.png"></image>
-            <text class="var">王工</text>
+            <text class="var">{{userInfo.email}}</text>
         </view>
     </view>
 </view>

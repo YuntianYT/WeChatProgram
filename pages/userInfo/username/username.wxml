@@ -1,6 +1,6 @@
 <view class="main">
   <view class="input">
-    <input></input>
+    <input bindinput="usernameInput"></input>
   </view>
-  <button type="warn" disabled>提交</button>
+  <button type="warn" disabled="{{!username.length>0}}" bindtap="updateUsername">提交</button>
 </view>

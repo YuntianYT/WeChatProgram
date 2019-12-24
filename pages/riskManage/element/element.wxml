@@ -1,2 +1,5 @@
-<!--pages/riskManage/element/element.wxml-->
-<text>pages/riskManage/element/element.wxml</text>
+<view>
+  <view class='up'>--------------</view>
+  <mytree model='{{ treeData }}' bind:tapitem='tapItem'></mytree>
+  <view class='down'>--------------</view>
+</view>

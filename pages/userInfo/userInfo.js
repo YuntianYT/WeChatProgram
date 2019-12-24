@@ -1,11 +1,13 @@
 // pages/userInfo/userInfo.js
+var config = require('../../utils/config.js')
+var app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    userInfo: null
   },
   goPhone() {
     wx.navigateTo({
@@ -22,11 +24,33 @@ Page({
       url: './username/username',
     })
   },
+  getUser() {
+    var that = this
+    wx.request({
+      url: config.host + 'appUser/getUser',
+      data: {
+        id: app.globalData.userInfo.id,
+        mark: app.globalData.userInfo.mark,
+        mark_id: app.globalData.userInfo.mark_id
+      },
+      success(res) {
+        if (res.data !== -1) {
+          that.setData({
+            userInfo: res.data[0]
+          })
+          app.globalData.userInfo = res.data[0]
+        }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getUser()
+    this.setData({
+      userInfo: app.globalData.userInfo
+    })
   },
 
   /**

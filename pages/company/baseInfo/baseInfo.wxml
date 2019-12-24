@@ -2,21 +2,27 @@
   <view class="container">
     <view class="item">
         <text>公司名称：</text>
+        <text class="var">{{companyInfo.name}}</text>
     </view>
     <view class="item">
         <text>公司代码：</text>
+        <text class="var">{{companyInfo.code}}</text>
     </view>
     <view class="item">
         <text>法人代表：</text>
+        <text class="var">{{companyInfo.fillentp_name}}</text>
     </view>
     <view class="item">
         <text>联系方式：</text>
+        <text class="var">{{companyInfo.tel}}</text>
     </view>
     <view class="item">
         <text>注册地址：</text>
+        <text class="var">{{companyInfo.address}}</text>
     </view>
     <view class="item">
         <text>邮政编码：</text>
+        <text class="var">{{companyInfo.post_code}}</text>
     </view>
   </view>
 </view>

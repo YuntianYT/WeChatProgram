@@ -1,11 +1,14 @@
 {
   "pages": [
+
+    
     "pages/login/login",
     "pages/wxDrawer/index",
     "pages/company/company",
     "pages/aboutUs/aboutUs",
     "pages/logout/logout",
     "pages/changePassword/changePassword",
+    
     "pages/userInfo/userInfo",
     "pages/riskManage/element/element",
     "pages/riskManage/collectRemark/collectRemark",

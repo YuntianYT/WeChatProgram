@@ -1,13 +1,38 @@
 // pages/userInfo/email/email.js
+var config = require('../../../utils/config.js')
+
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    flag: true,
+    email: null
   },
-
+  emailInput: function (event) {
+    this.setData({
+      email: event.detail.value
+    })
+  },
+  updateEmail(){
+    wx.request({
+      url: config.host + 'appUser/updateUserInfo',
+      data: {
+        id: app.globalData.userInfo.id,
+        key: 'email',
+        value: this.data.email
+      },
+      success(res) {
+        if(res.data!==0){
+          wx.navigateBack({
+            delta: 1
+          })
+        }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

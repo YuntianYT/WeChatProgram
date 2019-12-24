@@ -1,6 +1,6 @@
 <view class="main">
   <view class="input">
-    <input></input>
+    <input bindinput="phoneInput"></input>
   </view>
-  <button type="warn" disabled>提交</button>
+  <button type="warn" disabled="{{!phone.length>0}}" bindtap="updatePhone">提交</button>
 </view>

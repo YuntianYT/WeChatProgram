@@ -4,18 +4,18 @@
     <view class="stable-bg">
       <view class="col-info">
         <text style="font-size: 25rpx">今日采集</text>
-        <text>\n个人：0项</text>
-        <text>\n企业：0项</text>
+        <text>\n个人：{{personNum[0]}}项</text>
+        <text>\n企业：{{companyNum[0]}}项</text>
       </view>
       <view class="col-info">
         <text style="font-size: 25rpx">本周采集</text>
-        <text>\n个人：0项</text>
-        <text>\n企业：0项</text>
+        <text>\n个人：{{personNum[1]}}项</text>
+        <text>\n企业：{{companyNum[1]}}项</text>
       </view>
       <view class="col-info">
         <text style="font-size: 25rpx">本月采集</text>
-        <text>\n个人：0项</text>
-        <text>\n企业：0项</text>
+        <text>\n个人：{{personNum[2]}}项</text>
+        <text>\n企业：{{companyNum[2]}}项</text>
       </view>
     </view>
     <view class="riskManage">
@@ -48,8 +48,8 @@
 <view bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" class="user" style="width: {{ui.menuWidth}}px">
    <view style="width: {{ui.menuWidth}}px;left:{{-ui.menuWidth/3 + ui.offsetLeft/3}}px" class="user-box {{!ui.tStart? 'withAnimate': ''}}">
      <view class="user-face-wrapper">
-       <view class="user-account">账号：shatoujiedao01</view>
-       <view class="user-company">所属公司：沙头街道</view>
+       <view class="user-account">账号：{{userInfo.user_code}}</view>
+       <view class="user-company">所属公司：{{userInfo.cname}}</view>
      </view>
      <view class="one-menu" bindtap="goUserInfo">
        <image class="icon" src="../../imgs/userInfo.png"></image>用户信息

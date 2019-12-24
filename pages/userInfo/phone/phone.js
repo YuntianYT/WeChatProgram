@@ -1,13 +1,38 @@
 // pages/userInfo/phone/phone.js
+var config = require('../../../utils/config.js')
+
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    flag: true,
+    phone: null
   },
-
+  phoneInput: function (event) {
+    this.setData({
+      phone: event.detail.value
+    })
+  },
+  updatePhone() {
+    wx.request({
+      url: config.host + 'appUser/updateUserInfo',
+      data: {
+        id: app.globalData.userInfo.id,
+        key: 'phone',
+        value: this.data.phone
+      },
+      success(res) {
+        if (res.data !== 0) {
+          wx.navigateBack({
+            delta: 1
+          })
+        }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

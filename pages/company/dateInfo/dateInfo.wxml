@@ -1,16 +1,16 @@
 <view class="main">
   <view class="container">
     <view class="item">
-        <text>注册日期：</text>
+        <text>注册日期：{{fill_date}}</text>
     </view>
     <view class="item">
-        <text>成立日期：</text>
+        <text>成立日期：{{exist_date}}</text>
     </view>
     <view class="item">
-        <text>营业限期开始时间：</text>
+        <text>营业限期开始时间：{{valid_date_sta}}</text>
     </view>
     <view class="item">
-        <text>营业限期到期时间：</text>
+        <text>营业限期到期时间：{{valid_date_end}}</text>
     </view>
   </view>
 </view>
