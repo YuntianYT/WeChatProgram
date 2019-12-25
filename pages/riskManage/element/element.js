@@ -1,5 +1,8 @@
+var config = require('../../../utils/config.js')
+var app = getApp();
 Page({
   data: {
+    myTreeData: null,
     treeData: {
       text: 'My Tree',
       id: 0,
@@ -59,8 +62,24 @@ Page({
   tapItem: function (e) {
     console.log('index接收到的itemid: ' + e.detail.itemid);
   },
-
+  getTreeData(){
+    var that = this
+    wx.request({
+      url: config.host + 'appElement/listTree',
+      data: {
+        cinsCode: '',
+        entpid: app.globalData.companyInfo.id
+      },
+      success(res) {
+        if (res.data !== -1) {
+          that.setData({
+            myTreeData: res.data[0]
+          })
+        }
+      }
+    })
+  },
   onLoad: function () {
-
+    this.getTreeData()
   },
 })
