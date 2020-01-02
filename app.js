@@ -8,6 +8,7 @@ App({
   },
   globalData:{
     userInfo:null,
-    companyInfo: null
+    companyInfo: null,
+    treeData: null
   }
 })

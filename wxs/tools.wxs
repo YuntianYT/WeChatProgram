@@ -1,0 +1,75 @@
+var replaceRankLevel = function (input) {
+  if (input != undefined) {
+    var result = '正常';
+  } else {
+    var result = '未评价';
+  }
+  if (input === "Z") {
+    result = '极高';
+  } else if (input === "Y") {
+    result = '高';
+  } else if (input === "X") {
+    result = '中等'
+  } else if (input === 'W') {
+    result = '低'
+  }
+  return result;
+}
+var submitStyle = function (input) {
+
+  var result = '未上报';
+  if (input === 1) {
+    result = '已上报';
+  } else if (input === 2) {
+    result = '重复作废';
+  }
+
+  return result;
+}
+var belong = function (input) {
+
+  var result = '未上报';
+  if (input === 2) {
+    result = '企业';
+  } else if (input === 3) {
+    result = '第三方';
+  }
+
+  return result;
+}
+
+var formatTime = function (date) {
+  var date = getDate(date);
+  var year = date.getFullYear()
+  var month = date.getMonth() + 1
+  var day = date.getDate()
+
+  var hour = date.getHours()
+  var minute = date.getMinutes()
+  var second = date.getSeconds()
+
+  // + ' ' + [hour, minute, second].map(formatNumber).join(':')
+  return [year, month, day].map(formatNumber).join('-')
+}
+
+function formatNumber(n) {
+  n = n.toString()
+  return n[1] ? n : '0' + n
+}
+
+var replaceEvalMethod = function (input) {
+
+  var result = 'LEC评价方法';
+  if (input === 2) {
+    result = '矩阵评价法';
+  }
+  return result;
+}
+
+module.exports = {
+  replaceRankLevel: replaceRankLevel,
+  submitStyle: submitStyle,
+  formatTime: formatTime,
+  belong: belong,
+  replaceEvalMethod: replaceEvalMethod,
+};

@@ -1,1 +1,34 @@
 /* pages/riskManage/riskStatistics/riskStatistics.wxss */
+.container{
+  margin: 20rpx;
+  border: solid #eee;
+  height: 1000rpx;
+}
+.header {
+  height: 130rpx;
+  border-bottom: solid #eee;
+  display: flex;
+  flex-direction: row;
+}
+image{
+  height: 100rpx;
+  width: 100rpx;
+  margin: 20rpx;
+}
+.header-title {
+  display: flex;
+  flex-direction: column;
+}
+.cate{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+.level{
+  margin-left: 20rpx;
+  font-size: 0.8em;
+  color: rgb(151, 146, 146)
+}
+.canvas {
+  width: 100%;
+  height: 800rpx;
+}

@@ -1,1 +1,11 @@
 /* pages/riskManage/element/element.wxss */
+.banner {
+  background-color: #eee;
+}
+.inner {
+  padding: 20rpx
+}
+.tree {
+  margin-top: 50rpx;
+  font-size: 1.5em
+}

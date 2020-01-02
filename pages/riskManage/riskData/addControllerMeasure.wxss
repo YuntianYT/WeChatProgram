@@ -1,0 +1,10 @@
+/* pages/riskManage/riskData/addControllerMeasure.wxss */
+.input {
+  margin-top: 40rpx;
+  border: solid #eee;
+  background-color: #eee;
+}
+.item {
+  padding: 30rpx 50rpx;
+  border-bottom: solid #eee;
+}

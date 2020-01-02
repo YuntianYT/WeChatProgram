@@ -1,6 +1,7 @@
 {
   "pages": [
 
+    "pages/riskManage/riskStatistics/riskStatistics",
     
     "pages/login/login",
     "pages/wxDrawer/index",
@@ -8,20 +9,28 @@
     "pages/aboutUs/aboutUs",
     "pages/logout/logout",
     "pages/changePassword/changePassword",
-    
     "pages/userInfo/userInfo",
     "pages/riskManage/element/element",
+    "pages/riskManage/element/elementDetailModal/elementDetailModal",
     "pages/riskManage/collectRemark/collectRemark",
     "pages/riskManage/companyRisk/companyRisk",
     "pages/riskManage/riskRemark/riskRemark",
-    "pages/riskManage/riskStatistics/riskStatistics",
+
     "pages/userInfo/username/username",
     "pages/userInfo/phone/phone",
     "pages/userInfo/email/email",
     "pages/company/baseInfo/baseInfo",
     "pages/company/featureInfo/featureInfo",
     "pages/company/dateInfo/dateInfo",
-    "pages/company/registerInfo/registerInfo"
+    "pages/company/registerInfo/registerInfo",
+    "pages/riskManage/collectRemark/collectRisk/collectRisk",
+    "pages/riskManage/riskData/addRiskHarmful",
+    "pages/riskManage/riskData/addRiskConse",
+    "pages/riskManage/riskData/addRiskEvalModal",
+    "pages/riskManage/riskData/addRiskEval",
+    "pages/riskManage/riskData/addControllerMeasure",
+    "pages/riskManage/riskRemark/remarkRiskContent/remarkRiskContent",
+    "pages/riskManage/riskRemark/remarkRiskContent/riskEval"
   ],
   "window": {
     "backgroundTextStyle": "light",

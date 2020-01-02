@@ -1,7 +1,15 @@
 <view>
   <tabs>
     <tab title='全部' active>
-        <view>111</view>
+      <view class="container">
+        <view class="header">
+          <image src="http://localhost:8080/www/pages/home/riskManage/img/column.png"></image>
+          <view class="header-title"><text class="cate">按单元统计</text><text class="level">风险程度：正常,低,中等,高,极高</text></view>
+        </view>
+        <view>
+          <canvas canvas-id="columnCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+        </view>
+      </view>
     </tab>
     <tab title='今天'>
         <view>222</view>

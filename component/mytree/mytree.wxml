@@ -1,10 +1,10 @@
 <view>
   <view>
-    <text wx:if='{{ isBranch }}' bindtap='toggle'>{{ open ? '[ - ]' : '[ + ]' }} </text>
-    <text wx:else>[ · ] </text>
-    <text bindtap='tapItem' data-itemid='{{ model.id }}'>{{ model.text }}</text>
+    <text wx:if='{{ isBranch }}' bindtap='toggle'>{{ open ? ' ➖ ' : ' ➕ ' }} </text>
+    <text wx:else> 🍃  </text>
+    <text bindtap='tapItem' data-item='{{ model }}'>{{ model.name }}</text>
   </view>
   <view style='padding-left: 50rpx;' wx:if='{{ isBranch }}' hidden='{{ !open }}'>
-    <mytree wx:for='{{ model.nodes }}' wx:key='id' model='{{ item }}'></mytree>
+    <mytree wx:for='{{ model.childItems }}' wx:key='code' model='{{ item }}'></mytree>
   </view>
 </view>

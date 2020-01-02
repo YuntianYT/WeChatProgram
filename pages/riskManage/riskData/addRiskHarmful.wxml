@@ -1,0 +1,13 @@
+<view class="main">
+  <view class="banner">
+    <view class="inner">
+      <text>危险因素分类</text>
+    </view>
+  </view>
+  <view class="tree">
+    <checktree model='{{ treeData }}' bind:tapitem='tapItem'></checktree>
+  </view>
+</view>
+<view class="footer">
+  <button type="warn">保存</button>
+</view>

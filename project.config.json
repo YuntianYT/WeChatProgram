@@ -23,7 +23,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.3",
+	"libVersion": "2.9.4",
 	"appid": "wx60cb85777dc5bb76",
 	"projectname": "WeChatProgram",
 	"debugOptions": {

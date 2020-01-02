@@ -1,0 +1,60 @@
+<wxs src="../../../../wxs/tools.wxs" module="tools" />
+<view class="main">
+    <view>
+        <view class="item">
+            <text>单元选择：{{model.ename}}</text>
+        </view>
+        <view class="item">
+            <text>审核状态:</text>
+            <text wx:if="{{model.is_verify===0}}">(未核实)</text>
+            <text wx:if="{{model.is_verify===1 && (model.advice==='' ||model.advice===null )}}">(已核实)</text>
+            <text wx:if="{{model.is_verify===1 && (model.advice!=='' ||model.advice!==null )}}">(已核实有意见)</text>
+            <text wx:if="{{model.is_verify===2 && model.is_check!==1}}">(待重评)</text>
+            <text wx:if="{{model.is_verify===2 && model.is_check===1}}">(已重评)</text>
+        </view>
+        <view class="item">
+            <text>核实人：</text>
+            <text wx:if="{{model.check_username==''|| model.check_username==undefined}}">暂无</text>
+            {{model.check_username}}
+        </view>
+        <view class="item">
+            <text>核实时间：</text>
+            <text wx:if="{{model.check_date==''|| model.check_date==undefined}}">暂无</text>
+            <text wx:else>{{tools.formatTime(model.check_date)}}</text>
+        </view>
+        <view class="item">
+          <view class="container">
+            <text>意见：</text>
+            <text wx:if="{{model.advice!=undefined  && model.advice!=''}}">{{model.advice}}</text>
+            <text wx:if="{{model.advice==undefined  || model.advice==''}}">无</text>
+          </view>
+        </view>
+        <view class="item">
+            <text>危险因素：</text>
+        </view>
+        <view class="item" wx:if="{{model.harmful!=undefined && model.harmful!=''}}" hidden="{{harmful==null}}" >
+          <view class="container">
+            <text>{{harmful}}</text>
+          </view>
+        </view>
+        <view class="item">
+            <text>导致后果：</text>
+            <text wx:if="{{model.conse_id!=undefined && model.conse_id!=''}}">{{results.length}}项</text>
+        </view>
+        <view wx:if="{{model.conse_id!=undefined && model.conse_id!=''}}" wx:for="{{results}}">
+            <view class="item {{item.rank_level}}" data-item="{{item}}" bindtap="goAddRiskEval">
+                <text class="results">:{{item.cname}} ({{tools.replaceRankLevel(item.rank_level)}})</text>
+                <image src="../../../../imgs/arrow.png"></image>
+            </view>
+        </view>
+        <view class="item">
+            <text>评估人：{{model.uname}}({{tools.belong(model.mark)}})</text>
+        </view>
+        <view class="item">
+            <text>评估时间：{{tools.formatTime(model.evaluate_date)}}</text>
+        </view>
+        <view class="item">
+            <text>上报时间：{{tools.formatTime(model.srsubmit_date)}}</text>
+        </view>
+    </view>
+</view>

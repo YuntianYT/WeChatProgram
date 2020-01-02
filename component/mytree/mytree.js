@@ -18,16 +18,14 @@ Component({
     },
 
     tapItem: function (e) {
-      var itemid = e.currentTarget.dataset.itemid;
-      console.log('组件里点击的id: ' + itemid);
-      this.triggerEvent('tapitem', { itemid: itemid }, { bubbles: true, composed: true });
+      var item = e.currentTarget.dataset.item;
+      this.triggerEvent('tapitem', { item: item }, { bubbles: true, composed: true });
     }
   },
 
   ready: function (e) {
     this.setData({
-      isBranch: Boolean(this.data.model.nodes && this.data.model.nodes.length),
+      isBranch: Boolean(this.data.model.childItems && this.data.model.childItems.length)
     });
-    console.log(this.data);
   },
 })

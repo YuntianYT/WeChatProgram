@@ -1,5 +1,8 @@
-<view>
-  <view class='up'>--------------</view>
+<view class="banner">
+  <view class="inner">
+    <text>企业单元树（点击查看单元详细信息）</text>
+  </view>
+</view>
+<view class="tree">
   <mytree model='{{ treeData }}' bind:tapitem='tapItem'></mytree>
-  <view class='down'>--------------</view>
 </view>

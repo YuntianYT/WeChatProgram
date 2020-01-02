@@ -1,0 +1,47 @@
+<view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      评价方法:
+      <image class="arrow" src="../../../imgs/downarrow.png"></image>
+      <text style="float: right">{{array[index]}}</text>
+  </picker>
+</view>
+
+<!-- lec -->
+<view class="section" wx:if="{{index==0}}">
+  <picker bindchange="bindPickerChange" value="{{accidentResultIndex}}" range="{{accidentResult}}">
+    事故结果：
+    <image class="arrow" src="../../../imgs/downarrow.png"></image>
+    <text style="float: right">{{accidentResult[accidentResultIndex]}}</text>
+  </picker>
+</view>
+<view class="section" wx:if="{{index==0}}">
+  <picker bindchange="bindPickerChange" value="{{frequencyIndex}}" range="{{frequency}}">
+    发生频率：
+    <image class="arrow" src="../../../imgs/downarrow.png"></image>
+    <text style="float: right">{{frequency[frequencyIndex]}}</text>
+  </picker>
+</view>
+<view class="section" wx:if="{{index==0}}">
+  <picker bindchange="bindPickerChange" value="{{peopleExposeIndex}}" range="{{peopleExpose}}">
+    人员暴露：
+    <image class="arrow" src="../../../imgs/downarrow.png"></image>
+    <text style="float: right">{{peopleExpose[peopleExposeIndex]}}</text>
+  </picker>
+</view>
+<!-- 矩阵 -->
+<view class="section" wx:if="{{index==1}}">
+  <picker bindchange="bindPickerChange" value="{{possibilityIndex}}" range="{{possibility}}">
+    可能性分级：
+    <image class="arrow" src="../../../imgs/downarrow.png"></image>
+    <text style="float: right">{{possibility[possibilityIndex]}}</text>
+  </picker>
+</view>
+<view class="section" wx:if="{{index==1}}">
+  <picker bindchange="bindPickerChange" value="{{severityIndex}}" range="{{severity}}">
+    严重性分级：
+    <image class="arrow" src="../../../imgs/downarrow.png"></image>
+    <text style="float: right">{{severity[severityIndex]}}</text>
+  </picker>
+</view>
+
+<button type="warn">保存</button>

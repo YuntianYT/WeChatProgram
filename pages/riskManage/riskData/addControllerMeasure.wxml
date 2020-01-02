@@ -1,0 +1,9 @@
+<view>
+  <checkbox-group bindchange="handleTap">
+    <view class="item" wx:for="{{measures}}"><checkbox value="{{item.id}}" >{{item.name}}</checkbox>
+      <view class="input">
+        <textarea placeholder="描述最多100位字符" disabled="{{true}}"></textarea>
+      </view>
+    </view>
+  </checkbox-group>
+</view>

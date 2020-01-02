@@ -1,1 +1,29 @@
 /* pages/riskManage/collectRemark/collectRemark.wxss */
+.container{
+  display: flex;
+  flex-direction: row;
+}
+.item {
+  width: 600rpx;
+  border: solid 2px rgb(47, 50, 240);
+  margin: 30rpx 10rpx 10rpx 20rpx;
+  border-radius: 10px;
+  padding: 20rpx;
+}
+.content {
+  margin-bottom: 20rpx
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+.icon {
+  margin-left: 50rpx;
+}
+.line {
+  border: solid 6px rgb(167, 164, 164);
+  margin-left: 80rpx;
+  margin-right: 40rpx;
+  height: 100%;
+  border-radius: 5px;
+}

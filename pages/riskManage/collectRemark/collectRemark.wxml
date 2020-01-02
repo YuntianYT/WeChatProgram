@@ -1,16 +1,80 @@
+<wxs src="../../../wxs/tools.wxs" module="tools" />
 <view>
   <tabs>
     <tab title='全部' active>
-        <view>111</view>
+    <view wx:for="{{list}}" class="container">
+      <view class="timeline">
+        <view class="icon">
+          <icon size="45" type="info"></icon>
+        </view>
+        <view class="line"></view>
+      </view>
+        <view class="item" data-item="{{item}}" bindtap="goCollectRisk">
+          <view class="content">
+            <text>单元名称:{{item.ename}}</text><text style="color: red">({{tools.submitStyle(item.is_submit)}})</text>
+          </view>
+          <view class="content">
+            <text>评估时间:{{tools.formatTime(item.evaluate_date)}}</text>
+          </view>
+          <view class="content">
+            <text>风险程度:{{tools.replaceRankLevel(item.rank_level)}}</text>
+          </view>
+          <view class="content">
+            <text>评估人:{{item.uname}}({{tools.belong(item.mark)}})</text>
+            
+          </view>
+        </view>
+    </view>
     </tab>
     <tab title='今天'>
-        <view>222</view>
+        <view wx:for="{{dayList}}" class="container">
+      <view class="timeline">
+        <view class="icon">
+          <icon size="45" type="info"></icon>
+        </view>
+        <view class="line"></view>
+      </view>
+        <view class="item">
+          <view class="content">
+            <text>单元名称:{{item.ename}}</text><text style="color: red">({{tools.submitStyle(item.is_submit)}})</text>
+          </view>
+          <view class="content">
+            <text>评估时间:{{tools.formatTime(item.evaluate_date)}}</text>
+          </view>
+          <view class="content">
+            <text>风险程度:{{tools.replaceRankLevel(item.rank_level)}}</text>
+          </view>
+          <view class="content">
+            <text>评估人:{{item.uname}}({{tools.belong(item.mark)}})</text>
+            
+          </view>
+        </view>
+    </view>
     </tab>
     <tab title='本月'>
-        <view> 333</view>
-    </tab>
-    <tab title='其他'>
-        <view> 4</view>
+       <view wx:for="{{monthList}}" class="container">
+      <view class="timeline">
+        <view class="icon">
+          <icon size="45" type="info"></icon>
+        </view>
+        <view class="line"></view>
+      </view>
+        <view class="item">
+          <view class="content">
+            <text>单元名称:{{item.ename}}</text><text style="color: red">({{tools.submitStyle(item.is_submit)}})</text>
+          </view>
+          <view class="content">
+            <text>评估时间:{{tools.formatTime(item.evaluate_date)}}</text>
+          </view>
+          <view class="content">
+            <text>风险程度:{{tools.replaceRankLevel(item.rank_level)}}</text>
+          </view>
+          <view class="content">
+            <text>评估人:{{item.uname}}({{tools.belong(item.mark)}})</text>
+            
+          </view>
+        </view>
+    </view>
     </tab>
   </tabs>
 </view>

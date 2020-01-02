@@ -1,0 +1,50 @@
+<wxs src="../../../../wxs/tools.wxs" module="tools" />
+<view class="item">
+  <view class="center">{{result.cname}}</view>
+</view>
+<view class="item">
+  <text>风险评价：</text>
+  <text wx:if="{{result.method!=undefined  && result.method!=''}}">{{tools.replaceEvalMethod(result.method)}}</text>
+</view>
+
+<!-- lec -->
+<view class="item" wx:if="{{result.method!=undefined  && result.method!='' && result.method==1}}">
+  <view class="container">
+    <view class="citem">L:{{lecDetail.fname}}({{lecDetail.fscore}})</view>
+    <view class="citem">E:{{lecDetail.pname}}({{lecDetail.pscore}})</view>
+    <view class="citem">C:{{lecDetail.aname}}({{lecDetail.ascore}})</view>
+    <view class="citem {{result.rank_level}}">总分/风险程度：{{lecDetail.ascore*lecDetail.fscore*lecDetail.pscore}}/{{tools.replaceRankLevel(result.rank_level)}}</view>
+  </view>
+</view>
+
+<!-- 矩阵 -->
+<view class="item" wx:if="{{result.method!=undefined  && result.method!='' && result.method==2}}">
+  <view class="container">
+    <view class="citem">可能性：{{matrixDetail.pgrade}}({{matrixDetail.pscore}})</view>
+    <view class="citem">严重性：{{matrixDetail.sgrade}}({{matrixDetail.sscore}})</view>
+    <view class="citem {{result.rank_level}}">总分/风险程度：{{matrixDetail.pscore*matrixDetail.sscore}}/{{tools.replaceRankLevel(result.rank_level)}}</view>
+  </view>
+</view>
+
+<view class="item" wx:if="{{result.is_submit===0}}" bindtap="goAddControllerMeasure">
+  <text>控制措施：</text>
+  <image class="arrow" src="../../../imgs/arrow.png"></image>
+</view>
+<view class="item" wx:if="{{result.is_submit===2}}">
+  <text>控制措施：</text>
+  <image class="arrow" src="../../../imgs/arrow.png"></image>
+</view>
+<view class="item" wx:if="{{result.risk_measures!=undefined  && result.risk_measures!=''}}" hidden="{{risk_measures==null}}" >
+  <view class="container2">
+    <text>{{risk_measures}}</text>
+  </view>
+</view>
+<view class="item">
+  <text>风险图片：</text>
+  <text wx:if="{{!(result.image_url1!=undefined && result.image_url1!='') && !(result.image_url2!=undefined && result.image_url2!='') && !(result.image_url3!=undefined && result.image_url3!='')}}">暂无</text>
+</view>
+<view wx:if="{{!(!(result.image_url1!=undefined && result.image_url1!='') && !(result.image_url2!=undefined && result.image_url2!='') && !(result.image_url3!=undefined && result.image_url3!=''))}}" class="item">
+  <image wx:if="{{result.image_url1!=undefined && result.image_url1!=''}}" src="http://106.12.112.211:8080/web-risk/risk/{{result.image_url1}}"></image>
+  <image wx:if="{{result.image_url2!=undefined && result.image_url2!=''}}" src="http://106.12.112.211:8080/web-risk/risk/{{result.image_url2}}"></image>
+  <image wx:if="{{result.image_url3!=undefined && result.image_url3!=''}}" src="http://106.12.112.211:8080/web-risk/risk/{{result.image_url3}}"></image>
+</view>

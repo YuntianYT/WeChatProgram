@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "checktree": "../../../component/checktree/checktree"
+  },
+  "navigationBarTitleText": "危险因素"
+}

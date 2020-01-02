@@ -129,6 +129,21 @@ Page({
       }
     })
   },
+  getTreeData() {
+    var that = this
+    wx.request({
+      url: config.host + 'appElement/listTree',
+      data: {
+        cinsCode: '',
+        entpid: app.globalData.companyInfo.id
+      },
+      success(res) {
+        if (res.data !== -1) {
+          app.globalData.treeData = res.data[0]
+        }
+      }
+    })
+  },
   onLoad() {
     
     try {
@@ -142,6 +157,7 @@ Page({
         userInfo: app.globalData.userInfo
       })
       this.queryRiskNum()
+      this.getTreeData()
     } catch (e) {
     }
   },

@@ -1,0 +1,8 @@
+<view wx:for="{{conses.data}}">
+  <checkbox-group>
+    <view class="item"><checkbox></checkbox>{{item.name}}</view>
+  </checkbox-group>
+</view>
+<view class="footer">
+  <button type="warn">保存</button>
+</view>

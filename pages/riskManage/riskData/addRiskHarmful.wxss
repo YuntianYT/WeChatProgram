@@ -1,0 +1,20 @@
+/* pages/riskManage/element/element.wxss */
+.banner {
+  background-color: #eee;
+}
+.inner {
+  padding: 20rpx
+}
+.tree {
+  margin-top: 20rpx;
+  font-size: 1.5em
+}
+.footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.main{
+  margin-bottom: 100px;
+}

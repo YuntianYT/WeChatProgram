@@ -1,0 +1,36 @@
+.main {
+  padding: 0rpx;
+}
+.container {
+  padding: 20rpx;
+  border: solid #eee;
+}
+.item {
+  padding: 30rpx;
+  border-bottom: solid #eee;
+}
+.var {
+  float: right;
+  color: rgb(172, 167, 167);
+}
+image {
+  width: 40rpx;
+  height: 40rpx;
+  float: right;
+  margin-left: 20px;
+}
+.results {
+  margin-left: 100rpx;
+}
+.W {
+  background-color: #63b8ff;
+}
+.X {
+  background-color: #eeee00;
+}
+.Y {
+  background-color: #ee9a00;
+}
+.Z {
+  background-color: #ee0000;
+}

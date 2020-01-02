@@ -1,0 +1,15 @@
+<view>
+  <view>
+  <checkbox-group data-item='{{ model }}' bindchange="handleChange">
+    <text wx:if='{{ isBranch }}' bindtap='toggle'>{{ open ? ' ➖ ' : ' ➕ ' }} </text>
+    <text wx:else> 🍃  </text>
+    
+      <checkbox checked="{{model.checked}}"></checkbox>
+    
+    <text>{{ model.name }}</text>
+    </checkbox-group>
+  </view>
+  <view style='padding-left: 50rpx;' wx:if='{{ isBranch }}' hidden='{{ !open }}'>
+    <checktree wx:for='{{ model.childItems }}' wx:key='code' model='{{ item }}'></checktree>
+  </view>
+</view>

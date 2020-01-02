@@ -1,0 +1,11 @@
+/* pages/riskManage/riskData/addRiskConse.wxss */
+.item {
+  padding: 30rpx;
+  border-bottom: solid #eee;
+}
+.footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
